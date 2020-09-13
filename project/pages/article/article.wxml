@@ -1,0 +1,24 @@
+<view class="style">
+  <image src="{{tech.techImage}}"/>
+</view>
+<view class="style5">
+<view class="style3">
+<view class="style2"><text>{{tech.techDate}}</text></view>
+<view class="style2"><text>阅读量：{{tech.techViewnum}}</text></view>
+
+</view>
+<view class="style4">
+<image  catchtap='handleCollection' wx:if="{{!isCollected}}" data-id="{{tech.techId}}"
+ src="../../image/shou.png"></image>
+ <image wx:if="{{isCollected}}" catchtap='handleCollection' data-id="{{tech.techId}}"  src="../../image/shou1.png"></image></view>
+</view>
+ <view class="divLine"></view>
+ <view class="divLine1"></view>
+ <view class="divLine"></view>
+ <view class="userinfo">
+      <text class="userinfo-nickname">{{tech.techName}}</text>
+  </view>
+  <view class="divLine"></view>
+<view class="style1">
+   <text>{{tech.techDescription}}</text>
+</view>

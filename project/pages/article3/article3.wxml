@@ -1,0 +1,72 @@
+<view class="style">
+  <image src="{{plant.plantImage}}"/>
+</view>
+<view class="style5">
+<view class="style3">
+<view class="style2"><text></text></view>
+
+</view>
+<view class="style4">
+<image  catchtap='handleCollection' wx:if="{{!isCollected}}"  src="../../image/shou.png"></image>
+ <image wx:if="{{isCollected}}" catchtap='handleCollection' src="../../image/shou1.png"></image></view>
+</view>
+ <view class="divLine"></view>
+ <view class="divLine1"></view>
+  <view class="divLine"></view>
+  
+ <view class="userinfo">
+      <text class="userinfo-nickname">{{plant.plantName}}</text>
+  </view>
+
+<view class="style1">
+  <view class="board">
+    <view class="board-item">
+        <view class="board-text"> <text >别名:</text></view> 
+        <view> <text >{{plant.plantOthername}}</text></view>
+     </view>
+   </view>
+     <view class="cartLeft"></view>
+      <view class="board">
+    <view class="board-item">
+        <view class="board-text"> <text >界:</text></view> 
+        <view> <text >{{plant.plantJie}}</text></view>
+     </view>
+   </view>
+     <view class="cartLeft"></view>
+      <view class="board">
+    <view class="board-item">
+        <view class="board-text"> <text >目:</text></view> 
+        <view> <text >{{plant.plantMu}}</text></view>
+     </view>
+   </view>
+     <view class="cartLeft"></view>
+      <view class="board">
+    <view class="board-item">
+        <view class="board-text"> <text >科:</text></view> 
+        <view> <text >{{plant.plantKe}}</text></view>
+     </view>
+   </view>
+     <view class="cartLeft"></view>
+      <view class="board">
+    <view class="board-item">
+        <view class="board-text"> <text >属:</text></view> 
+        <view> <text >{{plant.plantShu}}</text></view>
+     </view>
+   </view>
+     <view class="cartLeft"></view>
+      <view class="board">
+    <view class="board-item">
+        <view class="board-text"> <text >种:</text></view> 
+        <view> <text >{{plant.plantZhong}}</text></view>
+     </view>
+   </view>
+   <view class="cartLeft"></view>
+
+    <view class="board">
+   <view class="board-item">
+        <view class="board-text"> <text >植物学史:</text></view> 
+     </view>
+   
+   <view> <text>  {{plant.plantDescription}}</text></view>
+  </view>
+</view>

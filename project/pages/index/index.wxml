@@ -1,0 +1,154 @@
+<navigator url="../choose/choose">
+    <view class="circle-float">
+    <image src="../../image/write.png"/>
+    </view>
+</navigator>
+
+<!--index.wxml-->
+<navigator url="../article/article">
+<view class="container">
+  <view class="slide">
+  <swiper
+  indicator-dots="true"
+  autoplay="true"
+  interval="8000"
+  duration="1000"
+>
+  <block wx:for="{{techlist}}" wx:for-item="item">
+    <navigator url='../article/article?id={{item.techId}}'>
+
+    <swiper-item>
+    <image src="{{item.techImage}}" class="slide-image" width="355" height="300" />
+ 
+    </swiper-item>
+       </navigator>
+  </block>
+</swiper>
+</view>
+<!-- //啊是大swiper -->
+
+<view class="contain">
+  <view class="divLine"></view>
+</view>
+ </view>
+ </navigator>
+ <view wx:if="{{diarylength==0}}">
+<view class="con ">
+<view class="userinfo">
+      <image  class="userinfo-avatar" src="../../image/01.jpg" mode="cover"></image>
+      <text>点击黄色图标</text>
+       <text>创建你的第一本日记哟</text>
+      </view>
+ </view>
+</view>
+<view wx:else>
+ <view class="tr" >
+
+   <view class="td"> 
+        <image src="../../image/biji.png" />
+   </view>
+  <view class="divLine1"></view>
+<!-- 小花 -->
+   <view class="tr1">
+        <view class="board">
+           <scroll-view scroll-x class="scroll-header1">
+         <view wx:for="{{diaryList}}" wx:for-item="item">
+        <view  catchtap="getMsg" data-diaryid="{{item.diary.diaryId}}">
+          <view class="x3" ><image src="../../image/p2.png"/>
+        </view>
+        </view>
+       
+         
+          </view>
+  
+         </scroll-view>
+        </view>
+        
+   </view>
+
+  </view>
+
+  <view class="tr2" >
+   <view class="td2" >
+      <navigator url="../album/album">
+      <image src="../../image/tuku.png"/>
+          </navigator>
+   </view>
+  <view class="divLine2"></view>
+   <view class="tr3">
+
+        <scroll-view scroll-x class="scroll-header">
+<!-- 日化 -->
+         <block wx:for="{{diaryList}}" wx:for-index="xx" wx:for-item="item">
+            <view class="x3" catchtap='change' data-diaryid='{{item.diary.diaryId}}' >
+            <image src="{{item.diary.diaryImage}}"/></view>
+            
+              </block>
+         
+        
+          </scroll-view>
+  
+   </view>
+  </view>
+
+
+<view class="divLine4"></view>
+<view class="tr" >
+
+   <view class="td"> 
+        <image src="../../image/biji.png" />
+   </view>
+  <view class="divLine1"></view>
+
+   <view class="tr1">
+        <view class="board1">       
+         <navigator url="../write/write">
+         <view class="board-item">
+      <text>写日记</text>
+      <image src="../../image/8.png"mode="widthFix" />
+  </view>
+        </navigator>
+                 
+        
+      </view>
+        
+   </view>
+  </view>
+
+ <view wx:if="{{loglength==0}}">
+<view class="con ">
+<view class="userinfo">
+      <image  class="userinfo-avatar" src="../../image/01.jpg" mode="cover"></image>
+      <text>点击黄色图标</text>
+       <text>创建你的第一天日记吧</text>
+      </view>
+ </view>
+</view>
+<view wx:else>
+ <block  wx:for="{{logList}}" wx:for-index="xx" wx:for-item="item" data-diaryid='{{diaryId}}' wx:key="{{index}}" >
+  
+      <view class="divLine3"></view>
+      <view class="tr5" >
+           <view class="td5">
+              <view>
+                <text class="hello">{{item.mouth}}月</text>
+              </view>
+               <view>
+                 <text class="hello1">{{item.day}}日</text>
+                </view>
+              <view class="hello2"data-index="{{item.diarylog.logId}}" data-number="{{index}}" bindtap = "delItem">
+                   <image src="../../image/delete.png"/>
+              </view>
+           </view>
+  
+            <view class="tr6">
+               <view class="td6"><text>{{item.diarylog.logDescription}}</text></view>
+               <view class="td7"><image src="{{item.diarylog.logImage}}"/></view>
+            </view>
+         </view>
+ 
+   </block>
+
+   </view>
+
+</view>

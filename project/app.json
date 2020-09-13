@@ -1,0 +1,66 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/list/list",
+    "pages/text/text",
+    "pages/talk/talk",
+    "pages/message/message",
+    "pages/feedback/feedback",
+    "pages/skill/skill",
+    "pages/share/share",
+    "pages/document/document",
+    "pages/album/album",
+    "pages/state/state",
+    "pages/comment/comment",
+    "pages/like/like",
+    "pages/article/article",
+    "pages/trend/trend",
+    "pages/write/write",
+    "pages/sense/sense",
+    "pages/choose/choose",
+    "pages/detail/detail",
+    "pages/revise/revise",
+    "pages/ceshi/ceshi",
+    "pages/result/result",
+    "pages/article1/article1",
+    "pages/article2/article2",
+    "pages/article3/article3"
+
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#8E8CD8",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "image/shouye.png",
+        "selectedIconPath": "image/shouye.png"
+      },
+      {
+        "pagePath": "pages/list/list",
+        "text": "搜索",
+        "iconPath": "image/sousuo.png",
+        "selectedIconPath": "image/26.jpg"
+      },
+      {
+        "pagePath": "pages/text/text",
+        "text": "动态",
+        "iconPath": "image/xingcheng.png",
+        "selectedIconPath": "image/28.jpg"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "我的",
+        "iconPath": "image/me.png",
+        "selectedIconPath": "image/27.jpg"
+      }
+    ]
+  }
+}

@@ -1,0 +1,99 @@
+.style{
+  height:470rpx;
+  width:100%;
+}
+.style image{
+  height:450rpx;
+  width:100%;
+  border-radius: 50%;
+
+}
+.divLine{
+  background: white;
+ width: 100%;
+ height: 20rpx;
+}
+.divLine1{
+  background: #E0E3DA;
+ width: 100%;
+ height: 1rpx;
+}
+.style2 text{
+  font-size:25rpx;
+  color:darkgray;
+}
+.style3{
+ border: 0px solid darkgray;
+  width:80%;
+  
+  justify-content: center;
+  
+}
+.style4{
+  border: 0px solid darkgray;
+  width:20%;
+  
+  justify-content: center;
+  text-align: center;
+}
+.style5{
+  border: 0px solid darkgray;
+ display: flex;
+ width: 100%;
+ justify-content: center;
+ 
+ align-items: center;
+}
+.style4 image{
+  width:50rpx;
+  height:50rpx;
+}
+.style1 text{
+  font-family: "华文仿宋";
+  font-size:35rpx;
+  color:black;
+   
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color:black;
+   font-size:40rpx;
+}
+.cartLeft{
+
+width: 100%;
+
+height: 1rpx;
+
+border-bottom: 1rpx dashed #a7a8a8;
+
+}
+.board{
+  display:flex;
+  -webkit-flex-direction:column;
+  -moz-flex-direction:column;
+  -ms-flex-direction:column;
+  -o--flex-direction:column; 
+  flex-direction: column;
+
+}
+.board-item{
+  display:flex;
+  flex:1;
+ justify-items: center;
+  padding:20rpx;
+
+  align-items: center
+}
+
+.board-text{
+  display:flex;
+  flex:1;
+  width: 240rpx;
+  height: 30rpx;
+
+  text-align: center;
+}
